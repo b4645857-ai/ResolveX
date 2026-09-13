@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ResolveX — Autonomous Resolution Agent</title>
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+<div class="app-shell">
+<header class="topbar">
+  <div class="brand"><div class="brand-mark">RX</div><div><strong>ResolveX</strong><span>Autonomous Customer Resolution</span></div></div>
+  <div class="top-status"><span class="dot"></span> SIMULATED ENTERPRISE ENVIRONMENT</div>
+</header>
+<main>
+<section class="hero">
+  <div><div class="eyebrow">AGENTIC OPERATIONS CONSOLE</div><h1>Resolve the case.<br><em>Don't just answer it.</em></h1><p>ResolveX investigates customer state, selects tools, executes permitted actions, adapts when constraints change, and verifies the outcome.</p></div>
+ <div class="hero-badge">
+  <div class="ring">7</div>
+  <div>
+    <b>Agentic loop</b>
+    <span>Goal · Observe · Decide · Act · Result · Adapt · Verify</span>
+  </div>
+</div></div></div>
+</section>
+<section class="workspace">
+  <aside class="case-panel card">
+    <div class="section-title"><span>01</span> CASE INTAKE</div>
+    <label>Demo scenario</label>
+    <select id="scenario"></select>
+    <label>Customer issue</label>
+    <textarea id="issue">My laptop arrived damaged. I want a replacement.</textarea>
+    <div class="identity-grid"><div><small>CUSTOMER</small><b id="customer">CUST-1042</b></div><div><small>ORDER</small><b id="order">ORD-7712</b></div></div>
+    <button id="run">Run autonomous resolution <span>→</span></button>
+    <div class="guardrail"><b>Sandbox guardrail</b><span>No real customer, payment, inventory, or enterprise systems are modified.</span></div>
+  </aside>
+  <section class="agent-panel">
+    <div class="card live-card">
+      <div class="section-head"><div><div class="section-title"><span>02</span> AGENT ACTIVITY</div><h2 id="headline">Ready for a case</h2></div><div class="live-pill" id="live">IDLE</div></div><div class="loop" id="loop">
+
+  <div class="loop-item active">
+    <i>01</i>
+    <b>GOAL</b>
+    <span>Resolve the customer case</span>
+  </div>
+
+  <div class="loop-item">
+    <i>02</i>
+    <b>OBSERVE</b>
+    <span>Inspect enterprise state</span>
+  </div>
+
+  <div class="loop-item">
+    <i>03</i>
+    <b>DECIDE</b>
+    <span>Select next action</span>
+  </div>
+
+  <div class="loop-item">
+    <i>04</i>
+    <b>ACT</b>
+    <span>Execute resolution</span>
+  </div>
+
+  <div class="loop-item">
+    <i>05</i>
+    <b>RESULT</b>
+    <span>Evaluate outcome</span>
+  </div>
+
+  <div class="loop-item">
+    <i>06</i>
+    <b>ADAPT</b>
+    <span>Replan if blocked</span>
+  </div>
+
+  <div class="loop-item">
+    <i>07</i>
+    <b>VERIFY</b>
+    <span>Confirm final state</span>
+  </div>
+
+</div>
+      <div class="timeline" id="timeline"><div class="empty">Run a case to watch the agent pursue a real resolution.</div></div>
+    </div>
+    <div class="bottom-grid">
+      <div class="card data-card"><div class="section-title"><span>03</span> ENTERPRISE STATE</div><div id="state" class="state-grid"><div><small>ORDER STATUS</small><strong>—</strong></div><div><small>INVENTORY</small><strong>—</strong></div><div><small>POLICY</small><strong>—</strong></div><div><small>RESOLUTION</small><strong>—</strong></div></div></div>
+      <div class="card result-card"><div class="section-title"><span>04</span> VERIFIED OUTCOME</div><div id="result"><div class="result-icon">◎</div><h3>Not yet resolved</h3><p>The agent's final state will appear here after verification.</p></div></div>
+    </div>
+  </section>
+</section>
+</main>
+<footer><span>ResolveX · Tech Zephyr 4.0 · Problem Statement 5</span><span>Goal → Decision → Action → Adaptation → Verification</span></footer>
+</div>
+<script src="/assets/app.js"></script>
+</body></html>
